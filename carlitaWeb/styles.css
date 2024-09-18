@@ -1,0 +1,249 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #008db8;
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007199;
+}
+
+.logo img {
+    width: 35%;
+    max-width: 300px;
+    height: auto;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin: 0 10px;
+}
+
+.contact-info span {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.social-icons i {
+    margin-left: 10px;
+}
+
+nav {
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a i {
+    font-size: 20px;
+}
+
+.main-banner {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+    padding: 20px;
+    background-color: #f4faff;
+    border-top: 2px solid #007199;
+    border-bottom: 2px solid #007199;
+    width: 100vw; /* Asegura que ocupe todo el ancho de la pantalla */
+}
+
+.banner-left {
+    text-align: center;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+}
+
+.banner-left img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    max-width: 100%; /* Asegura que no exceda el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.banner-left h2 {
+    color: #007199;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+/* Sección de bienvenida */
+/* Sección de bienvenida */
+.bienvenida {
+    background-image: url('imagenes/img7.jpeg'); /* Asegúrate de que la imagen está en la ruta correcta */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+    background-position: center;
+    height: 400px; /* Ajusta según el tamaño que prefieras */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.bienvenida::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(98, 130, 243, 0.5); /* Color azul con 50% de opacidad */
+    z-index: 1;
+}
+
+.bienvenida .content {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté por encima de la superposición */
+    max-width: 800px;
+    padding: 20px;
+}
+
+.bienvenida h1 {
+    font-size: 48px;
+    color: #3c4f9e;
+    margin-bottom: 20px;
+}
+
+.bienvenida p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilos para la sección de Servicios */
+
+.servicios {
+    background-color: #e6f7ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.servicios h2 {
+    color: #007199;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.servicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/* Modifica la disposición en la sección limpieza */
+.servicio.limpieza {
+    flex-direction: row; /* Mantiene los íconos a la izquierda y la imagen a la derecha */
+}
+
+.servicio img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px; /* Añade margen izquierdo para separar la imagen del contenido */
+}
+
+.descripcion {
+    width: 55%;
+    text-align: left;
+}
+
+.descripcion h3 {
+    color: #007199;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center; /* Centra el subtítulo "LIMPIEZA" */
+}
+
+.descripcion p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.iconos-limpieza {
+    display: flex;
+    justify-content: space-around;
+    width: 55%; /* Ancho igual al de la descripción */
+    margin-bottom: 20px;
+    margin-right: 20px; /* Añadimos margen derecho para espacio entre los iconos y la imagen */
+}
+
+.icono {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono i {
+    font-size: 36px;
+    color: #007199;
+    margin-bottom: 10px;
+}
+
+.icono span {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #007199;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer img.logo-footer {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 20px;
+}
